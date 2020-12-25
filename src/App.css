@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Didact Gothic', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 60vh;
+  width: auto;
+  /* background-image: url("https://image.freepik.com/free-photo/narrow-road-green-grassy-field-surrounded-by-green-trees-with-bright-sun-background_181624-9968.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
-
-.App-link {
-  color: #61dafb;
+.card{
+  margin-top: 70px;
+  min-width: 30vw;
+  min-height: 450px;
+  border: 2px solid black;
+  
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  
+  
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.inputData{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.inputField{
+  height: 50px;
+  width: 320px;
+  border-radius: 50px;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+}
+.inputField:active{
+  border: none;
+}
+.warning{
+  padding-top: 30px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+.info{
+  margin-top: 20px;
+}
+.location{
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+}
+.temp{
+  text-align: center;
+  font-size: 55px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.minmax{
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
 }
